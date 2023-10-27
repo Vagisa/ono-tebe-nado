@@ -100,9 +100,12 @@
     column-gap: 78px;
     min-height: 758px;
     padding: 165px 50px 50px;
-    background-color: rgba(0, 0, 0, 0.6);
     font-size: 22px;
     text-transform: uppercase;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .main__header {
@@ -206,6 +209,7 @@
     background-size: cover;
     background-color: black;
     color: white;
+    flex-grow: 1;
 }
 
 .lots__item:nth-child(2n+1){
@@ -226,7 +230,6 @@
     justify-content: space-between;
     height: 100%;
     padding: 50px 40px;
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .lot__header {
