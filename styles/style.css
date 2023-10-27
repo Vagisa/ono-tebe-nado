@@ -1,6 +1,6 @@
 /* место для вашего кода */
 .header {
-    padding: 92px 49px 96px;
+    padding: 91px 49px 90px 51px;
 }
 
 .header__nav {
@@ -17,7 +17,7 @@
 
 .header__user-nav {
     justify-content: flex-start;
-    gap: 13px;
+    gap: 13.5px;
     min-width: 388px;
     min-height: 23px;
 }
@@ -37,6 +37,7 @@
     content: "";
     width: 7px;
     height: 7px;
+    margin-top: 4px;
     border: 1px solid black;
     border-radius: 50%;
     align-self: center;
@@ -55,7 +56,7 @@
 }
 
 .site-nav__logo {
-
+    padding-top: 1px;
 }
 
 .header__contacts {
@@ -66,6 +67,7 @@
     display: flex;
     flex-direction: column;
     min-width: 240px;
+
     line-height: 24.3px;
 }
 
@@ -76,6 +78,7 @@
 
 .contacts__address {
     font-style: normal;
+    padding-bottom: 1px;
 }
 
 .main {
@@ -84,7 +87,7 @@
 
 .main__cover {
     background: url(../images/cover.jpg) no-repeat center;
-    background-size: 1440px 757px;
+    background-size: 1440px 758px;
     background-color: black;
     color: white;
     text-transform: uppercase;
@@ -95,7 +98,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     column-gap: 78px;
-    min-height: 757px;
+    min-height: 758px;
     padding: 165px 50px 50px;
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 22px;
@@ -105,24 +108,38 @@
 .main__header {
     flex-grow: 1;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    min-height: 345px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 19px;
+    flex-basis: 100%;
+    flex-grow: 1;
     font-size: 100px;
     font-weight: 700;
     line-height: 100px;
+}
+
+.main__header-word {
+    display: flex;
     letter-spacing: 30px;
 }
 
-.main__header-word:first-child {
-    align-self: self-start;
-    line-height: 115px;
+.main__header-word:nth-child(3n+1) {
+    align-self: flex-start;
+    line-height: 117px;
 }
 
-.main__header-word:last-child {
-    align-self: self-end;
-    letter-spacing: 60px;
+.main__header-word:nth-child(3n+2) {
+    align-self: center;
+    padding-right: 29px;
+}
+
+.main__header-word:nth-child(3n) {
+    align-self: flex-end;
+    margin-right: -30px;
+}
+
+.main__header-isolated-letter {
+    margin-left: 30px;
 }
 
 .cover__text {
@@ -216,8 +233,8 @@
     font-size: 22px;
     line-height: 120%;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    list-style-position: inside;
+    text-decoration: underline;
+    text-decoration-skip: none;
 }
 
 .lot__text {
@@ -254,7 +271,7 @@
     flex-direction: column;
     gap: 25px;
     width: 885px;
-    min-height: 388px;
+    min-height: 387px;
 }
 
 .about__header {
@@ -274,7 +291,7 @@
     order: -1;
     width: 240px;
     height: 240px;
-    margin: 0 95px;
+    margin: -1px 95px 0;
     border-radius: 50%;
     background-color: black;
 }
