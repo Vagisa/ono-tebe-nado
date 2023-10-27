@@ -234,7 +234,7 @@
     line-height: 120%;
     text-transform: uppercase;
     text-decoration: underline;
-    text-decoration-skip: none;
+    text-underline-position: under;
 }
 
 .lot__text {
