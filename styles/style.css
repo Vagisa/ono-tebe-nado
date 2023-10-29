@@ -19,7 +19,7 @@
   justify-content: flex-start;
   gap: 13.5px;
   min-width: 388px;
-  min-height: 23px;
+  line-height: 22px;
 }
 
 .user-nav__list {
@@ -47,10 +47,6 @@
   border-bottom: 1px solid black;
 }
 
-.user-nav__link:not(.user-nav__link--active):hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
 .user-nav__link--active {
   border-bottom: none;
 }
@@ -73,7 +69,8 @@
 
 .contacts__tel,
 .contacts__mail {
-  border-bottom: 1px solid black;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .contacts__address {
@@ -162,10 +159,11 @@
 
 .button {
   width: 257px;
-  height: 52px;
+  min-height: 52px;
   color: inherit;
   background-color: transparent;
   border: 1px solid white;
+  font-family: inherit;
   font-size: inherit;
   text-transform: inherit;
   cursor: pointer;
@@ -173,7 +171,6 @@
 
 .main__lots {
   padding: 140px 50px 61px;
-  min-height: 850px;
 }
 
 .lots {
@@ -198,7 +195,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   flex-grow: 1;
-  gap: 20px;
+  gap: 25px;
 }
 
 .lots__item {
@@ -212,15 +209,15 @@
   flex-grow: 1;
 }
 
-.lots__item:nth-child(2n + 1) {
+.background-tomas-anderson-film {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.lots__item:nth-child(2n) {
+.background-one-boring-day {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.lots__item:nth-child(3n) {
+.background-painting-by-kandinsky {
   background-image: url(../images/card-lot-03.jpg);
 }
 
@@ -253,10 +250,6 @@
   border-bottom: 1px solid black;
 }
 
-.lots__link-to-all:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
 .main__about {
   padding: 90px 50px;
 }
@@ -265,7 +258,6 @@
   display: flex;
   justify-content: space-between;
   gap: 25px;
-  min-height: 667px;
 }
 
 .about__info {
@@ -274,11 +266,10 @@
   flex-direction: column;
   gap: 25px;
   width: 885px;
-  min-height: 387px;
 }
 
 .about__header {
-  margin-bottom: 75px;
+  margin: 101px 0 75px;
 }
 
 .about__text {
@@ -307,9 +298,12 @@
   padding: 90px 50px;
 }
 
-.footer__nav {
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: start;
-  min-height: 97px;
+  padding-top: 3px;
+  font-size: 18px;
 }
 
 .footer__user-nav {

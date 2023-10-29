@@ -25,7 +25,7 @@
             <a class="user-nav__link" href="#"> Об аукционе </a>
           </li>
         </ul>
-        <a class="site-nav__logo logo" href="index.html">
+        <a class="site-nav__logo logo" href="#">
           <img
             class="logo__img logo__img--black"
             src="images/logo-black.svg"
@@ -34,31 +34,25 @@
             height="106"
           >
         </a>
-        <ul class="header__contacts contacts__list">
-          <li class="contacts__item">
-            <a
-              class="contacts__tel"
-              href="tel:+99995555555"
-              aria-label="Телефон"
-            >
-              +9 999 555 5555
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a
-              class="contacts__mail"
-              href="mailto:info@sobaka.ge"
-              aria-label="Электронная почта"
-            >
-              info@sobaka.ge
-            </a>
-          </li>
-          <li class="contacts__item">
-            <address class="contacts__address">
-              наб. Принсенграхт 263-265,<br>Амстердам
-            </address>
-          </li>
-        </ul>
+        <address class="header__contacts contacts__list">
+          <a
+            class="contacts__tel"
+            href="tel:+99995555555"
+            aria-label="Телефон"
+          >
+            +9 999 555 5555
+          </a>
+          <a
+            class="contacts__mail"
+            href="mailto:info@sobaka.ge"
+            aria-label="Электронная почта"
+          >
+            info@sobaka.ge
+          </a>
+          <p class="contacts__address">
+            наб. Принсенграхт 263-265,<br>Амстердам
+          </p>
+        </address>
       </nav>
     </header>
     <main class="main">
@@ -84,8 +78,8 @@
       <section class="main__lots lots">
         <h2 class="lots__header main__section-header">Лоты</h2>
         <ul class="lots__list">
-          <li class="lots__item">
-            <a class="lots__link lot overlay" href="#">
+          <li class="lots__item background-tomas-anderson-film">
+            <article class="lot overlay">
               <h3 class="lot__header">
                 Фильм режиссёра, который бросил киношколу
               </h3>
@@ -93,10 +87,10 @@
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
               </p>
-            </a>
+            </article>
           </li>
-          <li class="lots__item">
-            <a class="lots__link lot overlay" href="#">
+          <li class="lots__item background-one-boring-day">
+            <article class="lot overlay">
               <h3 class="lot__header">
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
@@ -108,10 +102,10 @@
                 поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
                 Джойса?
               </p>
-            </a>
+            </article>
           </li>
-          <li class="lots__item">
-            <a class="lots__link lot overlay" href="#">
+          <li class="lots__item background-painting-by-kandinsky">
+            <article class="lot overlay" href="#">
               <h3 class="lot__header">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
@@ -121,7 +115,7 @@
                 котиков… Сколько бы вы на такое поставили, если бы не знали, что
                 это — одна из революционных работ Кандинского?
               </p>
-            </a>
+            </article>
           </li>
         </ul>
         <a class="lots__link-to-all" href="#"> Посмотреть больше </a>
@@ -145,7 +139,7 @@
             продолжали верить их создатели. И сейчас эти лоты стали культовыми.
           </p>
         </div>
-        <a class="about__logo logo" href="index.html">
+        <a class="about__logo logo" href="#">
           <img
             class="logo__img logo__img--white"
             src="images/logo-white.svg"
@@ -157,46 +151,42 @@
       </section>
     </main>
     <footer class="footer">
-      <nav class="footer__nav site-nav">
-        <ul class="footer__contacts contacts__list">
-          <li class="contacts__item">
-            <a
-              class="contacts__tel"
-              href="tel:+99995555555"
-              aria-label="Телефон"
-            >
-              +9 999 555 5555
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a
-              class="contacts__mail"
-              href="mailto:info@sobaka.ge"
-              aria-label="Электронная почта"
-            >
-              info@sobaka.ge
-            </a>
-          </li>
-          <li class="contacts__item">
-            <address class="contacts__address">
-              наб. Принсенграхт 263-265,<br>Амстердам
-            </address>
-          </li>
-        </ul>
-        <ul class="footer__user-nav user-nav__list">
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="#"> Главная </a>
-          </li>
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="#"> Посмотреть лоты </a>
-          </li>
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="#"> Об аукционе </a>
-          </li>
-        </ul>
+      <div class="footer__container">
+        <address class="footer__contacts contacts__list">
+          <a
+            class="contacts__tel"
+            href="tel:+99995555555"
+            aria-label="Телефон"
+          >
+            +9 999 555 5555
+          </a>
+          <a
+            class="contacts__mail"
+            href="mailto:info@sobaka.ge"
+            aria-label="Электронная почта"
+          >
+            info@sobaka.ge
+          </a>
+          <p class="contacts__address">
+            наб. Принсенграхт 263-265,<br>Амстердам
+          </p>
+        </address>
+        <nav>
+          <ul class="footer__user-nav user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--active" href="#"> Главная </a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#"> Посмотреть лоты </a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#"> Об аукционе </a>
+            </li>
+          </ul>
+        </nav>
         <ul class="footer__social-network social-network__list">
           <li class="social-network__item">
-            <a class="social-network__link">
+            <a class="social-network__link" href="#0">
               <img
                 class="social-network__img"
                 src="images/yt.svg"
@@ -207,7 +197,7 @@
             </a>
           </li>
           <li class="social-network__item">
-            <a class="social-network__link">
+            <a class="social-network__link" href="#0">
               <img
                 class="social-network__img"
                 src="images/vk.svg"
@@ -218,7 +208,7 @@
             </a>
           </li>
           <li class="social-network__item">
-            <a class="social-network__link">
+            <a class="social-network__link" href="#0">
               <img
                 class="social-network__img"
                 src="images/pinterest.svg"
@@ -229,7 +219,7 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
     </footer>
   </body>
 </html>
