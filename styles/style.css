@@ -62,9 +62,9 @@
 .contacts__list {
   display: flex;
   flex-direction: column;
-  min-width: 240px;
-
+  max-width: 240px;
   line-height: 24.3px;
+  font-style: normal;
 }
 
 .contacts__tel,
@@ -74,7 +74,6 @@
 }
 
 .contacts__address {
-  font-style: normal;
   padding-bottom: 1px;
 }
 
