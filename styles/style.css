@@ -1,6 +1,6 @@
 /* место для вашего кода */
 .header {
-  padding: 91px 49px 90px 51px;
+  padding: 91px 49px 92px 50px;
 }
 
 .header__nav {
@@ -11,15 +11,21 @@
 
 .site-nav {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 39% 20% 41%;
   font-size: 18px;
 }
 
 .header__user-nav {
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 13.5px;
   min-width: 388px;
   line-height: 22px;
+  list-style: circle;
+  overflow: hidden;
+}
+
+.header__user-nav .user-nav__item {
+  display: list-item;
 }
 
 .user-nav__list {
@@ -33,33 +39,38 @@
   gap: 12px;
 }
 
-.header__user-nav .user-nav__item:not(:first-child):before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-top: 4px;
-  border: 1px solid black;
-  border-radius: 50%;
-  align-self: center;
-}
-
 .user-nav__link {
   border-bottom: 1px solid black;
 }
 
-.user-nav__link--active {
+.user-nav__link_active {
   border-bottom: none;
 }
 
 .site-nav__logo {
-  padding-top: 1px;
+  display: flex;
+}
+
+.logo__img {
+  margin: auto;
+  width: 148px;
+}
+
+.logo__img_black {
+  height: 106px;
+}
+
+.logo__img_white {
+  height: 114px;
 }
 
 .header__contacts {
   margin-left: auto;
+  margin-right: 20px;
 }
 
 .contacts__list {
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
   max-width: 240px;
@@ -81,26 +92,30 @@
   flex-grow: 1;
 }
 
-.main__cover {
-  background: url(../images/cover.jpg) no-repeat center;
-  background-size: 1440px 758px;
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-}
-
 .cover {
+  z-index: -2;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   column-gap: 78px;
   min-height: 758px;
-  padding: 165px 50px 50px;
+  padding: 165px 20px 50px 50px;
+  background: url(../images/cover.jpg) no-repeat center / cover;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
   font-size: 22px;
   text-transform: uppercase;
 }
 
 .overlay {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -129,12 +144,11 @@
 
 .main__header-word:nth-child(3n + 2) {
   align-self: center;
-  padding-right: 29px;
+  padding-right: 60px;
 }
 
 .main__header-word:nth-child(3n) {
   align-self: flex-end;
-  margin-right: -30px;
 }
 
 .main__header-isolated-letter {
@@ -153,6 +167,7 @@
 }
 
 .cover__button {
+  margin-right: 30px;
   align-self: flex-end;
 }
 
@@ -169,7 +184,7 @@
 }
 
 .main__lots {
-  padding: 140px 50px 61px;
+  padding: 140px 25px 60px;
 }
 
 .lots {
@@ -198,14 +213,25 @@
 }
 
 .lots__item {
-  flex-basis: 430px;
-  min-height: 450px;
+  z-index: -2;
+  flex-basis: 333px;
+  min-height: 563px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: black;
   color: white;
   flex-grow: 1;
+}
+
+.lot {
+  z-index: -2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 50px 40px 48px;
 }
 
 .background-tomas-anderson-film {
@@ -218,14 +244,6 @@
 
 .background-painting-by-kandinsky {
   background-image: url(../images/card-lot-03.jpg);
-}
-
-.lot {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding: 50px 40px;
 }
 
 .lot__header {
@@ -250,13 +268,13 @@
 }
 
 .main__about {
-  padding: 90px 50px;
+  padding: 90px 25px;
 }
 
 .about {
   display: flex;
   justify-content: space-between;
-  gap: 25px;
+  gap: 28px;
 }
 
 .about__info {
@@ -273,6 +291,8 @@
 
 .about__text {
   font-size: 20px;
+  line-height: 24px;
+  word-spacing: 0.02em;
 }
 
 .about__logo {
@@ -284,13 +304,9 @@
   order: -1;
   width: 240px;
   height: 240px;
-  margin: -1px 95px 0;
+  margin: 0 45px;
   border-radius: 50%;
   background-color: black;
-}
-
-.logo__img {
-  margin: auto;
 }
 
 .footer {
@@ -301,7 +317,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
-  padding-top: 3px;
   font-size: 18px;
 }
 
@@ -310,9 +325,15 @@
   align-items: center;
 }
 
-.social-network__list {
+.footer__social-network {
   display: flex;
   justify-content: space-between;
-  width: 240px;
+  gap: 50px;
+  max-width: 240px;
   margin-left: auto;
+}
+
+.social-network__img {
+  width: 48px;
+  height: 48px;
 }

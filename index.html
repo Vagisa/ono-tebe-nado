@@ -14,7 +14,7 @@
       <nav class="header__nav site-nav">
         <ul class="header__user-nav user-nav__list">
           <li class="user-nav__item">
-            <a class="user-nav__link user-nav__link--active" href="#">
+            <a class="user-nav__link user-nav__link_active" href="#">
               Главная
             </a>
           </li>
@@ -27,11 +27,9 @@
         </ul>
         <a class="site-nav__logo logo">
           <img
-            class="logo__img logo__img--black"
+            class="logo__img logo__img_black"
             src="images/logo-black.svg"
             alt="Логотип Оно тебе надо"
-            width="148"
-            height="106"
           >
         </a>
         <address class="header__contacts contacts__list">
@@ -56,31 +54,31 @@
       </nav>
     </header>
     <main class="main">
-      <section class="main__cover">
-        <div class="cover overlay">
-          <h1 class="cover__header main__header">
-            <span class="main__header-word">
-              Он<span class="main__header-isolated-letter">о</span>
-            </span>
-            <span class="main__header-word">
-              теб<span class="main__header-isolated-letter">е</span>
-            </span>
-            <span class="main__header-word"
-              >н<span class="main__header-isolated-letter">а</span>до</span
-            >
-          </h1>
-          <p class="cover__text">Аукцион вещей, в которые никто не верил</p>
-          <button class="cover__button button" type="button">
-            Сделать ставку
-          </button>
-        </div>
+      <section class="cover">
+        <div class="overlay"></div>
+        <h1 class="cover__header main__header">
+          <span class="main__header-word">
+            Он<span class="main__header-isolated-letter">о</span>
+          </span>
+          <span class="main__header-word">
+            теб<span class="main__header-isolated-letter">е</span>
+          </span>
+          <span class="main__header-word"
+            >н<span class="main__header-isolated-letter">а</span>до</span
+          >
+        </h1>
+        <p class="cover__text">Аукцион вещей, в которые никто не верил</p>
+        <button class="cover__button button" type="button">
+          Сделать ставку
+        </button>
       </section>
       <section class="main__lots lots">
         <h2 class="lots__header main__section-header">Лоты</h2>
         <ul class="lots__list">
-          <li class="lots__item background-tomas-anderson-film">
+          <li class="lots__item">
             <a href="#">
-              <article class="lot overlay">
+              <article class="lot background-tomas-anderson-film">
+                <div class="overlay"></div>
                 <h3 class="lot__header">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -91,9 +89,10 @@
               </article>
             </a>
           </li>
-          <li class="lots__item background-one-boring-day">
+          <li class="lots__item">
             <a href="#">
-              <article class="lot overlay">
+              <article class="lot background-one-boring-day">
+                <div class="overlay"></div>
                 <h3 class="lot__header">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -108,9 +107,10 @@
               </article>
             </a>
           </li>
-          <li class="lots__item background-painting-by-kandinsky">
+          <li class="lots__item">
             <a href="#">
-              <article class="lot overlay">
+              <article class="lot background-painting-by-kandinsky">
+                <div class="overlay"></div>
                 <h3 class="lot__header">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -147,11 +147,9 @@
         </div>
         <a class="about__logo logo">
           <img
-            class="logo__img logo__img--white"
+            class="logo__img logo__img_white"
             src="images/logo-white.svg"
             alt="Логотип Оно тебе надо"
-            width="148"
-            height="114"
           >
         </a>
       </section>
@@ -180,7 +178,7 @@
         <nav>
           <ul class="footer__user-nav user-nav__list">
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--active" href="#"> Главная </a>
+              <a class="user-nav__link user-nav__link_active" href="#"> Главная </a>
             </li>
             <li class="user-nav__item">
               <a class="user-nav__link" href="#"> Посмотреть лоты </a>
@@ -190,15 +188,13 @@
             </li>
           </ul>
         </nav>
-        <ul class="footer__social-network social-network__list">
+        <ul class="footer__social-network">
           <li class="social-network__item">
             <a class="social-network__link" href="#0">
               <img
                 class="social-network__img"
                 src="images/yt.svg"
                 alt="Оно тебе надо в Youtube"
-                width="48"
-                height="48"
               >
             </a>
           </li>
@@ -208,8 +204,6 @@
                 class="social-network__img"
                 src="images/vk.svg"
                 alt="Оно тебе надо во Вктонтакте"
-                width="48"
-                height="48"
               >
             </a>
           </li>
@@ -219,8 +213,6 @@
                 class="social-network__img"
                 src="images/pinterest.svg"
                 alt="Оно тебе надо в Pinterest"
-                width="48"
-                height="48"
               >
             </a>
           </li>
